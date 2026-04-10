@@ -6,14 +6,14 @@ The focus of this project is not only prediction, but also statistical interpret
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Medical insurance costs vary significantly across individuals based on factors such as age, BMI, smoking habits, and family structure.  
 The goal of this project is to quantify these effects and build an interpretable model to predict insurance charges.
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 The dataset includes the following features:
 
@@ -27,7 +27,7 @@ The dataset includes the following features:
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
 ### 1. Data Preprocessing
 - One-hot encoding applied to categorical variables using `get_dummies`
@@ -58,32 +58,32 @@ To improve interpretability and model stability:
 
 ---
 
-## 📈 Model Performance
+## Model Performance
 
 - **R-squared:** 0.841  
 - **Adjusted R-squared:** 0.840  
 - **F-statistic p-value:** < 0.001  
 
-👉 The model explains approximately **84% of the variance** in insurance charges, indicating strong predictive performance for real-world data.
+The model explains approximately **84% of the variance** in insurance charges, indicating strong predictive performance for real-world data.
 
 ---
 
-## 🔑 Key Findings
+## Key Findings
 
-### 🚨 Most Important Predictor
+### Most Important Predictor
 - Smoking status is the strongest driver of insurance costs:
   - **Smokers pay approximately +$23,840 more** than non-smokers on average.
 
 ---
 
-### 📊 Other Key Effects
+### Other Key Effects
 - Age increases insurance cost by approximately **+$263 per year**
 - Each additional dependent increases cost by approximately **+$514**
 - BMI alone is not statistically significant
 
 ---
 
-### 🔥 Interaction Effects
+### Interaction Effects
 - `smoker_bmi` is highly significant, suggesting that:
   > The effect of BMI on insurance cost is much stronger for smokers.
 
@@ -91,13 +91,13 @@ This indicates a compounding risk effect between smoking and body mass.
 
 ---
 
-### 🌍 Regional Effects
+### Regional Effects
 - Southeast and Southwest regions show slightly lower charges compared to the baseline region
 - Region is a weaker predictor compared to health and lifestyle factors
 
 ---
 
-## ⚠️ Model Diagnostics Insights
+## Model Diagnostics Insights
 
 - Residuals are not perfectly normally distributed (common in real-world insurance data)
   - Skewness: 2.53  
@@ -106,7 +106,7 @@ This indicates a compounding risk effect between smoking and body mass.
 
 ---
 
-## 📉 Multicollinearity Analysis (VIF)
+## Multicollinearity Analysis (VIF)
 
 After applying feature centering:
 
@@ -119,7 +119,7 @@ After applying feature centering:
 
 ---
 
-## 🧠 Key Insight Summary
+## Key Insight Summary
 
 - Smoking is the dominant factor in predicting insurance costs
 - Age and number of dependents have moderate effects
@@ -128,7 +128,7 @@ After applying feature centering:
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 - Python
 - Pandas
