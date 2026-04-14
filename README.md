@@ -115,7 +115,7 @@ After applying feature centering:
 | Most features | ~1.0 – 1.6 |
 | Intercept | ~5.45 |
 
-✔ This indicates **very low multicollinearity** and a stable regression model.
+**very low multicollinearity** and a stable regression model.
 
 ---
 
